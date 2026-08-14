@@ -70,7 +70,8 @@ class Conversion:
         Ejemplo:
             pies_a_metros(3.28084) -> 1.0
         """
-        pass
+        conv_pies_metros = pies * 0.3048
+        return conv_pies_metros
     
     def decimal_a_binario(self, decimal):
         """
