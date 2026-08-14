@@ -120,11 +120,11 @@ class Conversion:
             decimal_a_romano(9) -> "IX"
             decimal_a_romano(1994) -> "MCMXCIV"
         """
-        NumerosRomanos = [(1,"I"),(4,"IV"),(5,"V"),(9,"IX"),(10,"X"),]
+        NumerosRomanos = [(1000, "M"), (900, "CM"), (500, "D"), (400, "CD"), (100, "C"), (90, "XC"), (50, "L"), (40, "XL"), (10, "X"), (9, "IX"), (5, "V"), (4, "IV"), (1, "I"),]
         conv_decimal_a_romano =""
         
         for valor, simbolo in NumerosRomanos:
-            while  numero >= valor:
+            while  numero >= valor: 
                 conv_decimal_a_romano += simbolo
                 numero -= valor
         return conv_decimal_a_romano
