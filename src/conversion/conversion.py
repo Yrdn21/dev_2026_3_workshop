@@ -207,4 +207,22 @@ class Conversion:
             morse_a_texto("... --- ...") -> "SOS"
             morse_a_texto(".... . .-.. .-.. ---") -> "HELLO"
         """
-        pass
+        morse_diccionario = {
+        ".-": "A", "-...": "B", "-.-.": "C", "-..": "D",
+        ".": "E", "..-.": "F", "--.": "G", "....": "H",
+        "..": "I", ".---": "J", "-.-": "K", ".-..": "L",
+        "--": "M", "-.": "N", "---": "O", ".--.": "P",
+        "--.-": "Q", ".-.": "R", "...": "S", "-": "T",
+        "..-": "U", "...-": "V", ".--": "W", "-..-": "X",
+        "-.--": "Y", "--..": "Z"
+        }
+        palabras = morse.split()
+        
+        texto =""
+        
+        for codigo in palabras:
+            if codigo in morse_diccionario:
+                texto += morse_diccionario[codigo]
+            else:
+                texto += "?"
+        return texto
