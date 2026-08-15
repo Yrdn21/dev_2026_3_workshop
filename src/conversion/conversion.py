@@ -185,12 +185,12 @@ class Conversion:
         resultado = ""
         
         for letra in texto:
-            if letra == "":
+            if letra == " ":
                 resultado += " / "
             else:
                 resultado += listamorse[letra] + " "
 
-        return resultado.strip
+        return resultado.strip()
     
     def morse_a_texto(self, morse):
         """
