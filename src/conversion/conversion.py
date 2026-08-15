@@ -190,7 +190,7 @@ class Conversion:
             else:
                 resultado += listamorse[letra] + " "
 
-        return resultado
+        return resultado.strip
     
     def morse_a_texto(self, morse):
         """
