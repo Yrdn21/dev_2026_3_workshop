@@ -189,7 +189,7 @@ class Conversion:
             if letra == " ":
                 resultado += " / "
             else:
-                resultado += listamorse[letra] + " "
+                resultado += listamorse[letra.upper()] + " "
 
         return resultado.strip()
     
