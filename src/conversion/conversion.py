@@ -180,20 +180,16 @@ class Conversion:
                       "M": "--", "N": "-.", "O": "---", "P": ".--.",
                       "Q": "--.-", "R": ".-.", "S": "...", "T": "-",
                       "U": "..-", "V": "...-", "W": ".--", "X": "-..-",
-                      "Y": "-.--", "Z": "--..",
-                      "0": "-----", "1": ".----", "2": "..---",
-                      "3": "...--", "4": "....-", "5": ".....",
-                      "6": "-....", "7": "--...", "8": "---..",
-                      "9": "----."
+                      "Y": "-.--", "Z": "--.."
                       }
         resultado = ""
         
-        for letra in texto.upper():
+        for letra in texto:
             if letra == "":
                 resultado += " / "
             else:
-                resultado += listamorse[letra] + ""
-            
+                resultado += listamorse[letra] + " "
+
         return resultado
     
     def morse_a_texto(self, morse):
