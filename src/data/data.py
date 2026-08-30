@@ -66,8 +66,8 @@ class Data:
         """
         listacombinada=[]
         
-        i=[]
-        j=[]
+        i=0
+        j=0
         
         while i < len(lista1) and j < len(lista2):
             if lista1[i] <= lista2[j]:
@@ -76,13 +76,9 @@ class Data:
             else:
                 listacombinada.append(lista2[j])
                 j += 1
-        while i < len(lista1):
-            listacombinada.append(lista1[i])
-            i += 1
-            
-        while j < len(lista1):
-            listacombinada.append(lista1[j])
-            j += 1
+        
+        listacombinada.extend(lista1[i:])
+        listacombinada.extend(lista2[j:])
         
         return listacombinada    
         
