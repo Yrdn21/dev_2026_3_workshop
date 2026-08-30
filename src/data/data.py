@@ -15,8 +15,8 @@ class Data:
             list: Lista con los elementos en orden inverso
         """
         lista_invertida = []
-        for elemento in lista:
-            lista_invertida.insert(0,elemento)
+        for i in range(len(lista)-1,-1,-1):
+            lista_invertida.append(lista[i]) 
         return lista_invertida
     
     def buscar_elemento(self, lista, elemento):
@@ -31,7 +31,10 @@ class Data:
         Returns:
             int: Índice del elemento o -1 si no se encuentra
         """
-        pass
+        for i in range(len(lista)):
+            if lista[i]==elemento:
+                return i
+            return -1
     
     def eliminar_duplicados(self, lista):
         """
