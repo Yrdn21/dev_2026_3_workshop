@@ -15,15 +15,15 @@ class Games:
             - Tijera vence a papel
             - Papel vence a piedra
         """
-        opciones= {"piedra","papel,","tijera"}
+        opciones= {"piedra","papel","tijera"}
         
         jugador1= jugador1.lower()
         jugador2= jugador2.lower()
         
         if jugador1 not in opciones:
             return jugador1
-        if jugador1 not in opciones:
-            return jugador1
+        if jugador2 not in opciones:
+            return jugador2
         
         if jugador1 == jugador2:
             return "empate"
