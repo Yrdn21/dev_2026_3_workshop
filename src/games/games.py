@@ -15,6 +15,8 @@ class Games:
             - Tijera vence a papel
             - Papel vence a piedra
         """
+        jugador1= jugador1.lower()
+        jugador2= jugador2.lower()
         if jugador1 == jugador2:
             return "empate"
         gana_a={"piedra":"tijera","tijera":"papel","papel":"piedra"}
