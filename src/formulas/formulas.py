@@ -43,7 +43,7 @@ class Formulas:
         v0=velocidad_inicial
         a=aceleracion
         t=tiempo
-        x = x0 + v0*t + (1/2)*a*t^2
+        x = x0 + v0*t + (1/2)*a*t**2
         return x
 
     def mruv_velocidad(self, velocidad_inicial, aceleracion, tiempo):
