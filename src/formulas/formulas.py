@@ -39,7 +39,12 @@ class Formulas:
         Ejemplo:
             mruv_posicion(0, 2, 1, 3) -> 10.5
         """
-        pass
+        x0= posicion_inicial
+        v0=velocidad_inicial
+        a=aceleracion
+        t=tiempo
+        x = x0 + v0*t + (1/2)*a*t^2
+        return x
 
     def mruv_velocidad(self, velocidad_inicial, aceleracion, tiempo):
         """
