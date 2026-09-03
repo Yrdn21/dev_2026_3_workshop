@@ -29,7 +29,7 @@ class Matrix:
             if len(fila_a) != len(fila_b):
                 raise ValueError("Las matrices deben tener las mismas dimensiones")
             
-            fila_resultado = [a + b for a, bin zip(fila_a, fila_b)]
+            fila_resultado = [a + b for a, b in zip(fila_a, fila_b)]
             resultado.append(fila_resultado)
         return resultado
 
