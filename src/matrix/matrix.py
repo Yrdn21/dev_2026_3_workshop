@@ -21,7 +21,17 @@ class Matrix:
         Ejemplo:
             suma_matrices([[1, 2], [3, 4]], [[5, 6], [7, 8]]) -> [[6, 8], [10, 12]]
         """
-        pass
+        if len(A) != len(B):
+            raise ValueError("Las matrices deben tener las mismas dimensiones")
+        
+        resultado=[]
+        for fila_a, fila_b in zip(A, B):
+            if len(fila_a) != len(fila_b):
+                raise ValueError("Las matrices deben tener las mismas dimensiones")
+            
+            fila_resultado = [a + b for a, bin zip(fila_a, fila_b)]
+            resultado.append(fila_resultado)
+        return resultado
 
     def resta_matrices(self, A, B):
         """
