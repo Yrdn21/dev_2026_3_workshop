@@ -109,7 +109,7 @@ class Data:
         """
         n = len(lista) + 1
         suma_esperada = n * (n+1) // 2
-        suma_real = suma(lista)
+        suma_real = sum(lista)
         return suma_esperada - suma_real
     
     def es_subconjunto(self, conjunto1, conjunto2):
