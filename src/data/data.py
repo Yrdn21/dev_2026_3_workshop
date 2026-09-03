@@ -94,7 +94,12 @@ class Data:
         Returns:
             list: Lista rotada
         """
-        pass
+        if not lista:
+            return lista
+        
+        n=len(lista)
+        k=k % n
+        return lista [-k:]+ lista[:-k] if k != 0 else lista[:]
     
     def encuentra_numero_faltante(self, lista):
         """
