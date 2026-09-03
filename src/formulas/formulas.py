@@ -63,7 +63,11 @@ class Formulas:
         Ejemplo:
             mruv_velocidad(2, 1, 3) -> 5.0
         """
-        pass
+        v0=velocidad_inicial
+        a=aceleracion
+        t=tiempo
+        formula = v0 + (a*t)
+        return formula
 
     def fuerza_newton(self, masa, aceleracion):
         """
